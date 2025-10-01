@@ -61,9 +61,18 @@ nav ul {
     display: flex;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * *
+* * * * FIX IMPLEMENTED HERE * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * *
+*/
 nav ul li {
+    /* This rule explicitly forces the list item to only take up the width of its content */
+    display: inline-block; 
     margin-left: 20px;
 }
+/* * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * *
+*/
 
 nav ul li a {
     color: white;
@@ -293,8 +302,10 @@ footer {
         margin-top: 10px;
     }
 
+    /* FIX for mobile navigation layout */
     nav ul li {
         margin: 5px 0;
+        display: block; /* Allows list items to stack vertically on mobile */
     }
 
     .hero-content h2 {
