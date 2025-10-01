@@ -93,7 +93,7 @@ nav ul li a:hover {
 */
 
 .hero {
-    background: url('hiking-background.jpg') no-repeat center center/cover; /* Replace 'hiking-background.jpg' with your image */
+    background: url('hiking-background.jpg') no-repeat center center/cover; /*..*/
     color: white;
     height: 60vh; /* Viewport height */
     display: flex;
