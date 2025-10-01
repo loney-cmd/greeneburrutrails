@@ -33,6 +33,8 @@ body {
 
 /*
 ===================================
+/*
+===================================
 2. HEADER & NAVIGATION
 ===================================
 */
@@ -49,10 +51,34 @@ header {
     z-index: 1000;
 }
 
-.logo h1 {
+/* ---------------------------------------------------- */
+/* NEW LOGO STYLING: Controlling the picture logo size */
+/* ---------------------------------------------------- */
+.logo a {
+    /* Ensures the logo link is treated as a block for sizing */
+    display: block; 
+    line-height: 0; /* Prevents extra space beneath the image */
+}
+
+.logo img {
+    /* Set a small, fixed height for the image logo */
+    height: 40px; 
+    /* Maintain the original aspect ratio */
+    width: auto; 
+    /* Remove any default margins that might push the header content */
+    margin: 0; 
+    /* Vertically align the logo with the navigation links */
+    vertical-align: middle; 
+}
+
+/* ---------------------------------------------------- */
+/* REMOVE: This is for text logo. No longer needed. */
+/* ---------------------------------------------------- */
+/* .logo h1 {
     margin: 0;
     font-size: 1.5em;
-}
+} */
+
 
 nav ul {
     list-style: none;
@@ -61,18 +87,11 @@ nav ul {
     display: flex;
 }
 
-/* * * * * * * * * * * * * * * * * * * * * * *
-* * * * FIX IMPLEMENTED HERE * * * * * * * *
-* * * * * * * * * * * * * * * * * * * * * *
-*/
+/* FIX: Ensures list items sit horizontally and only take up content width */
 nav ul li {
-    /* This rule explicitly forces the list item to only take up the width of its content */
     display: inline-block; 
     margin-left: 20px;
 }
-/* * * * * * * * * * * * * * * * * * * * * * *
-* * * * * * * * * * * * * * * * * * * * * *
-*/
 
 nav ul li a {
     color: white;
@@ -84,9 +103,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #ffc107; /* Gold/Yellow highlight on hover */
 }
-
-
-/*
 ===================================
 3. HERO SECTION (The main banner)
 ===================================
