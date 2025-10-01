@@ -33,34 +33,32 @@ body {
 
 /*
 ===================================
-/*
-===================================
 2. HEADER & NAVIGATION
 ===================================
 */
 
 header {
-    background-color: #1a4d2e; /* Deep Forest Green */
-    color: white;
-    padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky; /* Keeps the menu visible when scrolling */
-    top: 0;
-    z-index: 1000;
+    background-color: #1a4d2e; /* Deep Forest Green */
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Keeps the menu visible when scrolling */
+    top: 0;
+    z-index: 1000;
 }
 
 .logo h1 {
-    margin: 0;
-    font-size: 1.5em;
+    margin: 0;
+    font-size: 1.5em;
 }
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * *
@@ -68,32 +66,34 @@ nav ul {
 * * * * * * * * * * * * * * * * * * * * * *
 */
 nav ul li {
-    /* This rule explicitly forces the list item to only take up the width of its content */
-    display: inline-block; 
-    margin-left: 20px;
+    /* This rule explicitly forces the list item to only take up the width of its content */
+    display: inline-block; 
+    margin-left: 20px;
 }
 /* * * * * * * * * * * * * * * * * * * * * * *
 * * * * * * * * * * * * * * * * * * * * * *
 */
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffc107; /* Gold/Yellow highlight on hover */
+    color: #ffc107; /* Gold/Yellow highlight on hover */
 }
 
+
+/*
 ===================================
 3. HERO SECTION (The main banner)
 ===================================
 */
 
 .hero {
-    background: url('hiking-background.jpg') no-repeat center center/cover; /*..*/
+    background: url('hiking-background.jpg') no-repeat center center/cover; /* Replace 'hiking-background.jpg' with your image */
     color: white;
     height: 60vh; /* Viewport height */
     display: flex;
