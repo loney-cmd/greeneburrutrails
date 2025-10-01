@@ -40,69 +40,53 @@ body {
 */
 
 header {
-    background-color: #1a4d2e; /* Deep Forest Green */
-    color: white;
-    padding: 15px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky; /* Keeps the menu visible when scrolling */
-    top: 0;
-    z-index: 1000;
+    background-color: #1a4d2e; /* Deep Forest Green */
+    color: white;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Keeps the menu visible when scrolling */
+    top: 0;
+    z-index: 1000;
 }
 
-/* ---------------------------------------------------- */
-/* NEW LOGO STYLING: Controlling the picture logo size */
-/* ---------------------------------------------------- */
-.logo a {
-    /* Ensures the logo link is treated as a block for sizing */
-    display: block; 
-    line-height: 0; /* Prevents extra space beneath the image */
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
 }
-
-.logo img {
-    /* Set a small, fixed height for the image logo */
-    height: 40px; 
-    /* Maintain the original aspect ratio */
-    width: auto; 
-    /* Remove any default margins that might push the header content */
-    margin: 0; 
-    /* Vertically align the logo with the navigation links */
-    vertical-align: middle; 
-}
-
-/* ---------------------------------------------------- */
-/* REMOVE: This is for text logo. No longer needed. */
-/* ---------------------------------------------------- */
-/* .logo h1 {
-    margin: 0;
-    font-size: 1.5em;
-} */
-
 
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
 }
 
-/* FIX: Ensures list items sit horizontally and only take up content width */
+/* * * * * * * * * * * * * * * * * * * * * * *
+* * * * FIX IMPLEMENTED HERE * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * *
+*/
 nav ul li {
-    display: inline-block; 
-    margin-left: 20px;
+    /* This rule explicitly forces the list item to only take up the width of its content */
+    display: inline-block; 
+    margin-left: 20px;
 }
+/* * * * * * * * * * * * * * * * * * * * * * *
+* * * * * * * * * * * * * * * * * * * * * *
+*/
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffc107; /* Gold/Yellow highlight on hover */
+    color: #ffc107; /* Gold/Yellow highlight on hover */
 }
+
 ===================================
 3. HERO SECTION (The main banner)
 ===================================
